@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Trending Projects</string>
+    <string name="title_activity_trending_projects_listing">TrendingProjectsListing</string>
+</resources>
