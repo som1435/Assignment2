@@ -49,7 +49,7 @@ fun ProjectVerticalCard(
                     .fillMaxWidth()
                     .height(150.dp)
                     .clip(RoundedCornerShape(8)),
-                painter = painterResource(id = R.drawable.ic_launcher_background),
+                painter = painterResource(id = R.drawable.img1),
                 contentDescription = "",
                 contentScale = ContentScale.Crop
             )

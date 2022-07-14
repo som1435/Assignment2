@@ -17,4 +17,7 @@ interface ProjectDao {
     @Query("SELECT * FROM project")
     fun getProjects(): Flow<List<Project>>
 
+    @Query("SELECT * FROM project ORDER BY RANDOM() LIMIT 5")
+    fun getShuffledProjects(): Flow<List<Project>>
+
 }

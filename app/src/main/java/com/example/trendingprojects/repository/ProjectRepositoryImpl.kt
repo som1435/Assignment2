@@ -14,4 +14,8 @@ class ProjectRepositoryImpl @Inject constructor(private val projectDao: ProjectD
     override suspend fun updateProject(id: Int, fav: Boolean) {
         projectDao.updateProject(id, fav)
     }
+
+    override suspend fun getShuffledProjects(): Flow<List<Project>> =
+        projectDao.getShuffledProjects()
+
 }

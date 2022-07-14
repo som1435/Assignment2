@@ -6,7 +6,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -34,7 +34,7 @@ fun ProjectHorizontalCard(project: Project) {
                     .fillMaxWidth()
                     .height(150.dp)
                     .clip(RoundedCornerShape(8)),
-                painter = painterResource(id = R.drawable.ic_launcher_background),
+                painter = painterResource(id = R.drawable.img1),
                 contentDescription = "",
                 contentScale = ContentScale.Crop
             )

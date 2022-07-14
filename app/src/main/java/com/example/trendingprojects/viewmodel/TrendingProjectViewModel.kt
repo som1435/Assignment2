@@ -17,7 +17,7 @@ class TrendingProjectViewModel @Inject constructor(
     ViewModel() {
 
     val projects: StateFlow<List<Project>> = flow {
-        projectRepository.getProjects().collect { emit(it) }
+        projectRepository.getShuffledProjects().collect { emit(it) }
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(),
